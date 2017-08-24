@@ -26,13 +26,13 @@ const styles = StyleSheet.create({
     alignContent: 'space-around'
   },
   buttonContainer: {
-    backgroundColor: '#a8dbaa',
-    borderRadius: 5,
     width: 50,
-    height: 50
+    height: 50,
+    borderWidth: 1,
+    borderColor: '#0b4f0d',
   },
   button: {
-    color: '#0b4f0d',
+    backgroundColor: 'white'
   }
 
 })

@@ -53,7 +53,7 @@ export default class GameBox extends React.Component {
 
     return (
       <View>
-      <Text>Let's play Noughts & Crosses</Text>
+      <Text style={styles.text} >Let's play Noughts & Crosses</Text>
       <View className="game" style={styles.container}>
       { this.state.tiles.map( (tile, position) => {
         return (
@@ -73,9 +73,19 @@ const styles = StyleSheet.create({
     // flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    width: 150,
-    height: 150,
+    width: 152,
+    height: 152,
     alignItems: 'center',
     justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#0b4f0d',
   },
+  text: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'red',
+    fontSize: 20,
+    width: 180,
+    fontWeight: 'bold',
+  }
 });
